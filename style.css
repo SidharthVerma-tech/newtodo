@@ -1,0 +1,165 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    margin-left: 8px;
+}
+button{
+    font-size: 1.5rem;
+}
+.todoButton{
+    background-color: white;
+    border: none;
+    height: 28px;
+    width: 28px;
+    cursor: pointer;
+    height: 3rem;
+    width: 3rem;
+}
+body{
+    flex-direction: column;
+    background-image: linear-gradient(120deg,#f6d365,#fda085);
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+header h1{
+    font-size: 3rem;
+    color: white;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form button{
+    color: #d88771;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+form button:hover{
+    color: white;
+    background: #d88771;
+}
+form input{
+    border: none;
+    height: 3rem;
+    font-size: 2rem;
+}
+
+.todoList{
+    list-style: none;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 3rem;
+    width: 20rem;
+    border-radius: 5px;
+
+    /* background-color: white; */
+
+}
+.todoList li{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    font-size: 1rem;
+    margin: 10px;
+    align-items: center;
+    padding: 12px;
+    transition: all 1s ease;
+    /* flex: 1;
+    justify-content: end; */
+}
+
+.completedButton{
+    display: inline;
+    flex-direction: row;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(127, 218, 149);
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    border: none;
+}
+.trashButton{
+    display: inline;
+    flex-direction: row;
+    width: 30px;
+    height: 30px;
+    background-color: #ff6f47;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    border: none;
+}
+.fa-trash, .fa-check{
+    pointer-events: none;
+}
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+    transition: all 1.5s ease;
+}
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+
+}
+.select{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+select{
+    color: red;
+    width: 10rem;
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 1rem;
+}
+.select::after{
+    content: "\25BC";
+    position: absolute;
+    background: #ff6f47;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+.select::after:hover{
+    background-color: #ff6f47;
+}
+
